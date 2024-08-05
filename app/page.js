@@ -10,16 +10,12 @@ export default function Home() {
     const [opem, setOpem] = useState([])
     const [itemName, setItemName] = useState('')
 
-    const updateInventory = async() => {
+    const updateInventory = async () => {
         const snapshot = query(collection(firestore, 'inventory'))
     }
-    return ( <
-        Box >
-        <
-        Typography variant = "h1" > Inventory Management < /Typography> <
-        /Box>
-
-
-
+    return (
+        <Box>
+            <Typography variant="h1">Inventory Management</Typography>
+        </Box>
     )
 }
